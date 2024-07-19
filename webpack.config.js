@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"), // Pastikan bundle.js di folder public
   },
   module: {
     rules: [
@@ -30,6 +30,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/Catalogue.html",
+      filename: false, // Atur index.html sebagai halaman utama
     }),
   ],
 };
