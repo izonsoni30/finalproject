@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="bg-white shadow-md font-semibold fixed top-0 left-0 w-full z-10">
+      <div class="container mx-auto h-14 px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="./img/logo edspert id.png" alt="Logo Edspert" class="h-6 top-2" />
+          <div class="flex items-center space-x-4 ml-4">
+            <a href="Catalogue.html" class="text-aku hover:text-gray-800 transition-colors">Home</a>
+            <a href="#" id="combo-button" class="text-aku hover:text-gray-800 transition-colors flex items-center" onclick="toggleDropdown(event)">
+              Products
+              <img src="./img/vv.png" alt="Resources Icon" class="ml-2 w-2" />
+            </a>
+            <a href="#" id="combo-button" class="text-aku hover:text-gray-800 transition-colors flex items-center" onclick="toggleDropdown(event)">
+              Resources
+              <img src="./img/vv.png" alt="Resources Icon" class="ml-2 w-2" />
+            </a>
+
+            <a href="#" class="akuKu text-aku hover:text-gray-800 transition-colors">Pricing</a>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="text-aku py-2 px-4 rounded-md">Log in</button>
+          <button class="bg-primary text-white py-2 px-4 rounded-md">Sign up</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="Details.html" class="py-8 bg-white mt-28">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2">
+              <img src="./img/comp.png" alt="Web Development Bootcamp" class="rounded-lg shadow-lg" />
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 md:pl-8">
+              <h2 class="text-1xl font-semibold text-primary mb-3">Intensive Bootcamp</h2>
+              <h3 class="text-3xl font-bold text-gray-900 mb-20">Web Development Bootcamp</h3>
+              <div class="grid grid-cols-2 gap-4 text-lg text-gray-700">
+                <div class="flex flex-col items-center">
+                  <strong class="text-2xl text-primary">400+</strong>
+                  <p>Portofolio Siswa</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <strong class="text-2xl text-primary">10k</strong>
+                  <p>Anggota Komunitas</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <strong class="text-2xl text-primary">80%</strong>
+                  <p>Alumni diterima kerja</p>
+                </div>
+                <div class="flex flex-col items-center">
+                  <strong class="text-2xl text-primary">2000+</strong>
+                  <p>Testimoni</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Image 1: Mentor Section -->
+    <section class="py-8 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Mentor</h2>
+        <p class="text-lg text-gray-700 mb-8 text-center">Dipandu oleh Mentor Terbaik Kami</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center p-6 rounded-lg shadow-md bg-gray-100">
+            <img src="./img/a.png" alt="Agnes Amanta" class="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Agnes Amanta</h3>
+            <p class="text-primary">Founder & CEO</p>
+            <p class="text-sm text-gray-500">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+            <div class="flex justify-center space-x-4 mt-4 mb-0">
+              <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+            </div>
+          </div>
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <img src="./img/b.png" alt="Kajen Permadi" class="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Kajen Permadi</h3>
+            <p class="text-primary">Engineering Manager</p>
+            <p class="text-sm text-gray-500">Lead engineering teams at Figma, Pitch, and Protocol Labs.</p>
+            <div class="flex justify-center space-x-4 mt-4 mb-0">
+              <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+            </div>
+          </div>
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <img src="./img/c.png" alt="Natsir Naradi" class="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Natsir Naradi</h3>
+            <p class="text-primary">Product Manager</p>
+            <p class="text-sm text-gray-500">Former PM for Linear, Lambda School, and On Deck.</p>
+            <div class="flex justify-center space-x-4 mt-4 mb-0">
+              <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+            </div>
+          </div>
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <img src="./img/d.png" alt="Rahimah Gilda" class="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Rahimah Gilda</h3>
+            <p class="text-primary">Frontend Developer</p>
+            <p class="text-sm text-gray-500">Former frontend dev for Linear, Coinbase, and Postscript.</p>
+            <div class="flex justify-center space-x-4 mt-4 mb-0">
+              <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+            </div>
+          </div>
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <img src="./img/e.png" alt="Suartini Novi" class="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Suartini Novi</h3>
+            <p class="text-primary">Backend Developer</p>
+            <p class="text-sm text-gray-500">Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
+            <div class="flex justify-center space-x-4 mt-4 mb-0">
+              <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+            </div>
+          </div>
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <img src="./img/f.png" alt="Hannah Airlangga" class="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Hannah Airlangga</h3>
+            <p class="text-primary">Product Designer</p>
+            <p class="text-sm text-gray-500">Founding design team at Figma. Former Plex, Stripe, and Tile.</p>
+            <div class="flex justify-center space-x-4 mt-4 mb-0">
+              <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+            </div>
+          </div>
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <img src="./img/h.png" alt="Firman Kurniawan" class="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Firman Kurniawan</h3>
+            <p class="text-primary">UX Researcher</p>
+            <p class="text-sm text-gray-500">Lead user research for Slack. Contractor for Netflix and Udacity.</p>
+            <div class="flex justify-center space-x-4 mt-4 mb-0">
+              <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+            </div>
+          </div>
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <img src="./img/g.png" alt="Mario Agustinus" class="w-24 h-24 rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Mario Agustinus</h3>
+            <p class="text-primary">Customer Success</p>
+            <p class="text-sm text-gray-500">Lead CX at Wealthsimple. Former PagerDuty and Screen.</p>
+            <div class="flex justify-center space-x-4 mt-4 mb-0">
+              <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+              <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-6 text-center">Fasilitas</h2>
+        <p class="text-lg text-gray-700 mb-8 text-center">Pengalaman Bootcamp Terbaik untuk Kamu!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Komunitas -->
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <div class="text-purple-500 mb-4">
+              <i class="fas fa-users fa-2x"></i>
+            </div>
+            <img src="./img/org.png" alt="Manusia" class="rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Komunitas</h3>
+            <p class="text-gray-700">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+          </div>
+          <!-- 1-on-1 Session -->
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <div class="text-purple-500 mb-4">
+              <i class="fas fa-heart fa-2x"></i>
+            </div>
+            <img src="./img/love.png" alt="Love" class="rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">1-on-1 Session</h3>
+            <p class="text-gray-700">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+          </div>
+          <!-- Active Learning -->
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <div class="text-purple-500 mb-4">
+              <i class="fas fa-brain fa-2x"></i>
+            </div>
+            <img src="./img/trending-up.png" alt="Trending" class="rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Active Learning</h3>
+            <p class="text-gray-700">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+          </div>
+          <!-- Happy Atmosphere -->
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <div class="text-purple-500 mb-4">
+              <i class="fas fa-smile fa-2x"></i>
+            </div>
+            <img src="./img/smile.png" alt="Emote" class="rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Happy Atmosphere</h3>
+            <p class="text-gray-700">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+          </div>
+          <!-- Tugas -->
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <div class="text-purple-500 mb-4">
+              <i class="fas fa-tasks fa-2x"></i>
+            </div>
+            <img src="./img/flag.png" alt="Bendera" class="rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Tugas</h3>
+            <p class="text-gray-700">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+          </div>
+          <!-- Intensive Bootcamp -->
+          <div class="text-center p-6 bg-gray-100 rounded-lg shadow-md">
+            <div class="text-purple-500 mb-4">
+              <i class="fas fa-laptop-code fa-2x"></i>
+            </div>
+            <img src="./img/zap.png" alt="Petir" class="rounded-full mx-auto mb-4" />
+            <h3 class="text-xl font-semibold text-gray-900">Intensive Bootcamp</h3>
+            <p class="text-gray-700">Kenali banyak anggota dari komunitas alumni Edspert dari berbagai macam bidang studi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 mx-auto">
+      <div class="container px-4 text-center">
+        <h2 class="text-2xl font-semibold mb-6">Materi</h2>
+        <div class="space-y-4">
+          <div class="p-4 bg-white shadow-md rounded-md max-w-md text-left mx-auto">
+            <h3 class="text-lg font-semibold">Introduction to Web Development</h3>
+            <p class="text-gray-600 whitespace-nowrap">Belajar logika dan hal-hal dasar untuk menyiapkan kamu belajar pengembangan web</p>
+          </div>
+          <div class="p-4 bg-white shadow-md rounded-md max-w-md text-left mx-auto">
+            <h3 class="text-lg font-semibold">Introduction to Web Development</h3>
+            <p class="text-gray-600 whitespace-nowrap">Belajar logika dan hal-hal dasar untuk menyiapkan kamu belajar pengembangan web</p>
+          </div>
+          <div class="p-4 bg-white shadow-md rounded-md max-w-md text-left mx-auto">
+            <h3 class="text-lg font-semibold">Introduction to Web Development</h3>
+            <p class="text-gray-600 whitespace-nowrap">Belajar logika dan hal-hal dasar untuk menyiapkan kamu belajar pengembangan web</p>
+          </div>
+          <div class="p-4 bg-white shadow-md rounded-md max-w-md text-left mx-auto">
+            <h3 class="text-lg font-semibold">Introduction to Web Development</h3>
+            <p class="text-gray-600 whitespace-nowrap">Belajar logika dan hal-hal dasar untuk menyiapkan kamu belajar pengembangan web</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Daftar Kelas Sekarang -->
+    <section class="py-8 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-start">
+          <div class="text-left">
+            <h2 class="text-2xl font-semibold mb-4">Daftar Kelas Sekarang</h2>
+            <p class="text-gray-600 mb-6">Join over 10,000+ students already growing with Edspert</p>
+          </div>
+          <div class="flex space-x-4">
+            <button class="px-4 py-2 bg-gray-100 rounded-md">Hubungi CS</button>
+            <button class="px-4 py-2 bg-purple-600 text-white rounded-md">Daftar Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Footer -->
+    <footer class="py-8 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between items-center mb-8">
+          <div class="w-full md:w-1/3 text-center md:text-left mb-4 md:mb-0">
+            <img src="./img/logo edspert id.png" alt="Edspert Logo" class="flex justify-self-auto space-x-4 mt-10" />
+            <p class="text-gray-600">Design amazing digital experiences that create more happy in the world.</p>
+          </div>
+          <div class="w-full md:w-2/3 flex justify-between">
+            <div>
+              <h3 class="text-sm font-semibold text-gray-400 mb-4">Product</h3>
+              <ul class="font-bold text-gray-500 space-y-2">
+                <li class="font-bold text-gray-500">Overview</li>
+                <li class="font-bold text-gray-500">Features</li>
+                <li class="font-bold text-gray-500">Solutions <span class="font-normal text-green-600">New</span></li>
+                <li class="font-bold text-gray-500">Tutorials</li>
+                <li class="font-bold text-gray-500">Pricing</li>
+                <li class="font-bold text-gray-500">Releases</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-gray-400 mb-4">Company</h3>
+              <ul class="font-bold text-gray-500 space-y-2">
+                <li>About us</li>
+                <li>Careers</li>
+                <li>Press</li>
+                <li>News</li>
+                <li>Media kit</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-gray-400 mb-4">Resources</h3>
+              <ul class="font-bold text-gray-500 space-y-2">
+                <li>Blog</li>
+                <li>Newsletter</li>
+                <li>Events</li>
+                <li>Help centre</li>
+                <li>Tutorials</li>
+                <li>Support</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-gray-400 mb-4">Social</h3>
+              <ul class="font-bold text-gray-500 space-y-2">
+                <li>Twitter</li>
+                <li>LinkedIn</li>
+                <li>Facebook</li>
+                <li>GitHub</li>
+                <li>AngelList</li>
+                <li>Dribbble</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold text-gray-400 mb-4">Legal</h3>
+              <ul class="font-bold text-gray-500 space-y-2">
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Cookies</li>
+                <li>Licenses</li>
+                <li>Settings</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto px-4 flex items-center justify-between mt-10">
+          <p class="text-sm text-saja">&copy; 2027 Untitled UI. All rights reserved.</p>
+          <div class="flex justify-center space-x-4 mt-4 mb-0">
+            <a href="#"><img src="./img/twitter.png" alt="Twitter" /></a>
+            <a href="#"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="./img/facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="./img/Icon.png" alt="GitHub" /></a>
+            <a href="#"><img src="./img/peace.png" alt="AngelList" /></a>
+            <a href="#"><img src="./img/bola.png" alt="Dribbble" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
