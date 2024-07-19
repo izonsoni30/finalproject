@@ -30,7 +30,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/Catalogue.html",
-      filename: false, // Atur index.html sebagai halaman utama
+      filename: "index.html", // Atur index.html sebagai halaman utama
     }),
   ],
 };
